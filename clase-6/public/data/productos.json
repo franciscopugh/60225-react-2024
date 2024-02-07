@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "Monstera Deliciosa",
+        "size": "Large",
+        "price": 1500,
+        "stock": 10,
+        "img": "1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Croton",
+        "size": "Small",
+        "price": 2200,
+        "stock": 15,
+        "img": "2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Calathea",
+        "size": "Medium",
+        "price": 2100,
+        "stock": 9,
+        "img": "3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Anthurium Vitechii",
+        "size": "Small",
+        "price": 1800,
+        "stock": 10,
+        "img": "4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Syngonium Albo",
+        "size": "Large",
+        "price": 2700,
+        "stock": 24,
+        "img": "5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Aspargus Plumoso",
+        "size": "Medium",
+        "price": 1700,
+        "stock": 15,
+        "img": "6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Orquídea Phalaenopsis",
+        "size": "Small",
+        "price": 1800,
+        "stock": 15,
+        "img": "7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Ficus elástica",
+        "size": "Large",
+        "price": 2800,
+        "stock": 12,
+        "img": "8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Fitonia",
+        "size": "Small",
+        "price": 1600,
+        "stock": 17,
+        "img": "9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Maranta Leuconeura",
+        "size": "Large",
+        "price": 2500,
+        "stock": 20,
+        "img": "10.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Begonia Maculata",
+        "size": "Medium",
+        "price": 15,
+        "stock": 20,
+        "img": "11.jpg"
+    },
+    {
+        "id": 12,
+        "title": "maranta Light",
+        "size": "Medium",
+        "price": 1900,
+        "stock": 6,
+        "img": "12.jpg"
+    }
+]
