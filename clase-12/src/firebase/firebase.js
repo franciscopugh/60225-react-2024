@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, doc, addDoc, getDocs, getDoc } from 'firebase/firestore'
+import { getFirestore, collection, doc, addDoc, getDocs, getDoc, updateDoc, deleteDoc } from 'firebase/firestore'
 
 const firebaseConfig = {
     apiKey: "",
@@ -161,16 +161,39 @@ export const createProducts = async () => {
 
 }
 
+// Consultar productos
 export const getProducts = async () => {
     const productos = await getDocs(collection(bdd, "productos"))
     const items = productos.docs.map(prod => { return { ...prod.data(), id: prod.id } })
     return items
 }
 
+//Consultar Producto
 export const getProduct = async (id) => {
     const producto = await getDoc(doc(bdd, "productos", id))
     const item = { ...producto.data(), id: producto.id }
     return item
 }
 
-getProducts()
+// Actualizar Producto
+
+export const updateProduct = async (id, info) => {
+    await updateDoc(doc(bdd, "productos", id), info)
+}
+
+// Eliminar producto
+
+export const deleteProduct = async (id) => {
+    await deleteDoc(doc(bdd, "productos", id))
+}
+
+/*updateProduct("0Xo8rph1mD00Kyn4Dn0S", {
+    "title": "Monstera Deliciosa",
+    "size": "Large",
+    "price": 3500,
+    "stock": 5,
+    "img": "https://firebasestorage.googleapis.com/v0/b/react-2024-ced6e.appspot.com/o/1.jpg?alt=media&token=59f5f773-760f-4375-9be6-3452e54be684",
+    "category": "interior"
+}).then(rta => console.log(rta))*/
+
+deleteProduct('16Sn6rAOiMccnvYjjw4v')
